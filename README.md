@@ -33,23 +33,29 @@ Membangun dan mengevaluasi model machine learning untuk diagnosis penyakit jantu
 - Jupyter Notebook
 - (sertakan library yang dipakai, misal: scikit-learn, pandas, numpy, matplotlib/seaborn)
 
-📈 Hasil Eksperimen
-Experiment 1 — Tanpa Outlier Removal
-Model	Accuracy	Precision	Recall	F1	AUC
-Logistic Regression	0.8949	0.8974	0.9150	0.9061	0.9326
-Naive Bayes	0.8659	0.8867	0.8693	0.8779	0.9173
-Bagging	0.8696	0.8774	0.8889	0.8831	0.9153
-AdaBoost	0.8732	0.8882	0.8824	0.8852	0.9185
-XGBoost	0.8768	0.8993	0.8758	0.8874	0.9354
-Experiment 2 — Dengan Outlier Removal (Isolation Forest)
-Model	Accuracy	Precision	Recall	F1	AUC
-Logistic Regression	0.8678	0.8504	0.9076	0.8780	0.9174
-Naive Bayes	0.8634	0.8667	0.8740	0.8703	0.9145
-Bagging	0.8150	0.8407	0.7983	0.8190	0.8973
-AdaBoost	0.8546	0.8525	0.8740	0.8631	0.9024
-XGBoost	0.8282	0.8175	0.8655	0.8408	0.9032
+## 📈 Hasil Eksperimen
 
-Dari kedua eksperimen ini, model dengan performa terbaik secara keseluruhan adalah Logistic Regression dan XGBoost — keduanya konsisten unggul di hampir semua metrik. Menariknya, penerapan Isolation Forest untuk outlier removal pada eksperimen ini justru menurunkan performa sebagian besar model dibanding tanpa outlier removal, sehingga penanganan outlier bukan selalu berdampak positif dan perlu dievaluasi secara empiris untuk tiap dataset.
+### Experiment 1 — Tanpa Outlier Removal
+
+| Model | Accuracy | Precision | Recall | F1 | AUC |
+|:--|--:|--:|--:|--:|--:|
+| Logistic Regression | **0.8949** | 0.8974 | **0.9150** | **0.9061** | 0.9326 |
+| Naive Bayes | 0.8659 | 0.8867 | 0.8693 | 0.8779 | 0.9173 |
+| Bagging | 0.8696 | 0.8774 | 0.8889 | 0.8831 | 0.9153 |
+| AdaBoost | 0.8732 | 0.8882 | 0.8824 | 0.8852 | 0.9185 |
+| XGBoost | 0.8768 | **0.8993** | 0.8758 | 0.8874 | **0.9354** |
+
+### Experiment 2 — Dengan Outlier Removal (Isolation Forest)
+
+| Model | Accuracy | Precision | Recall | F1 | AUC |
+|:--|--:|--:|--:|--:|--:|
+| Logistic Regression | **0.8678** | 0.8504 | **0.9076** | **0.8780** | **0.9174** |
+| Naive Bayes | 0.8634 | **0.8667** | 0.8740 | 0.8703 | 0.9145 |
+| Bagging | 0.8150 | 0.8407 | 0.7983 | 0.8190 | 0.8973 |
+| AdaBoost | 0.8546 | 0.8525 | 0.8740 | 0.8631 | 0.9024 |
+| XGBoost | 0.8282 | 0.8175 | 0.8655 | 0.8408 | 0.9032 |
+
+> 💡 Dari kedua eksperimen, **Logistic Regression** dan **XGBoost** konsisten unggul di hampir semua metrik. Menariknya, penerapan Isolation Forest untuk outlier removal justru **menurunkan** performa sebagian besar model dibanding tanpa outlier removal — menunjukkan bahwa penanganan outlier tidak selalu berdampak positif dan perlu dievaluasi secara empiris untuk tiap dataset.
 
 ## 📊 Dataset
 
