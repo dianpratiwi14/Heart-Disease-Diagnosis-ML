@@ -35,7 +35,7 @@ Membangun dan mengevaluasi model machine learning untuk diagnosis penyakit jantu
 
 ## 📊 Dataset
 
-Dataset yang digunakan bersumber dari **Kaggle** (dataset publik). _(tambahkan link dataset Kaggle-nya di sini kalau ada)_
+Dataset yang digunakan bersumber dari **Kaggle** (dataset publik). _(https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction/data)_
 
 ## 📁 Struktur Project
 
