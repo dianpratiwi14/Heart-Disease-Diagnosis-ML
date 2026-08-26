@@ -35,7 +35,7 @@ Membangun dan mengevaluasi model machine learning untuk diagnosis penyakit jantu
 
 ## 📈 Hasil Eksperimen
 
-### Experiment 1 — Tanpa Outlier Removal
+### Experiment 1 - Tanpa Outlier Removal
 
 | Model | Accuracy | Precision | Recall | F1 | AUC |
 |:--|--:|--:|--:|--:|--:|
@@ -45,7 +45,7 @@ Membangun dan mengevaluasi model machine learning untuk diagnosis penyakit jantu
 | AdaBoost | 0.8732 | 0.8882 | 0.8824 | 0.8852 | 0.9185 |
 | XGBoost | 0.8768 | **0.8993** | 0.8758 | 0.8874 | **0.9354** |
 
-### Experiment 2 — Dengan Outlier Removal (Isolation Forest)
+### Experiment 2 - Dengan Outlier Removal (Isolation Forest)
 
 | Model | Accuracy | Precision | Recall | F1 | AUC |
 |:--|--:|--:|--:|--:|--:|
@@ -55,7 +55,7 @@ Membangun dan mengevaluasi model machine learning untuk diagnosis penyakit jantu
 | AdaBoost | 0.8546 | 0.8525 | 0.8740 | 0.8631 | 0.9024 |
 | XGBoost | 0.8282 | 0.8175 | 0.8655 | 0.8408 | 0.9032 |
 
-> 💡 Dari kedua eksperimen, **Logistic Regression** dan **XGBoost** konsisten unggul di hampir semua metrik. Menariknya, penerapan Isolation Forest untuk outlier removal justru **menurunkan** performa sebagian besar model dibanding tanpa outlier removal — menunjukkan bahwa penanganan outlier tidak selalu berdampak positif dan perlu dievaluasi secara empiris untuk tiap dataset.
+> 💡 Dari kedua eksperimen, **Logistic Regression** dan **XGBoost** konsisten unggul di hampir semua metrik. Menariknya, penerapan Isolation Forest untuk outlier removal justru **menurunkan** performa sebagian besar model dibanding tanpa outlier removal yang menunjukkan bahwa penanganan outlier tidak selalu berdampak positif dan perlu dievaluasi secara empiris untuk tiap dataset.
 
 ## 📊 Dataset
 
