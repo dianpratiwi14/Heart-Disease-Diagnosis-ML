@@ -55,7 +55,7 @@ Membangun dan mengevaluasi model machine learning untuk diagnosis penyakit jantu
 | AdaBoost | 0.8546 | 0.8525 | 0.8740 | 0.8631 | 0.9024 |
 | XGBoost | 0.8282 | 0.8175 | 0.8655 | 0.8408 | 0.9032 |
 
-> 💡 Dari kedua eksperimen, **Logistic Regression** dan **XGBoost** konsisten unggul di hampir semua metrik. Menariknya, penerapan Isolation Forest untuk outlier removal justru **menurunkan** performa sebagian besar model dibanding tanpa outlier removal yang menunjukkan bahwa penanganan outlier tidak selalu berdampak positif dan perlu dievaluasi secara empiris untuk tiap dataset.
+> 💡 Pada Eksperimen 1 (tanpa outlier removal), **Logistic Regression** dan **XGBoost** menunjukkan performa terbaik dengan nilai AUC masing-masing 0,933 dan 0,935. Setelah penerapan Isolation Forest pada Eksperimen 2, sebagian besar algoritma mengalami penurunan performa, terutama **Bagging** dan **XGBoost**, meskipun **Logistic Regression** masih mempertahankan performa relatif tinggi. Hal ini menunjukkan bahwa proses outlier removal mempengaruhi distribusi data dan berdampak pada hasil prediksi, terutama algoritma yang sensitif terhadap perubahan data.
 
 ## 📊 Dataset
 
